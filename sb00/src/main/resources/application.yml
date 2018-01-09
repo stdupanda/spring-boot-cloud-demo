@@ -1,0 +1,7 @@
+logging:
+  file: ./sb00.log
+  level:
+    root: info
+    cn: debug
+server:
+  port: 8080

@@ -1,0 +1,24 @@
+logging:
+  file: ./sb02.log
+  level:
+    root: info
+    cn: debug
+    org.springframework.orm.jpa.JpaTransactionManager: debug
+    org.hibernate.SQL: debug
+#    org.hibernate.type.descriptor.sql: trace
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.241:3306/hce_guiyang?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+    username: root
+    password: Cec@123456
+# 配置 jpa, 采用 Hibernate 实现
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        hbm2ddl:
+          auto: update

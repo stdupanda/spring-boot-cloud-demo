@@ -1,0 +1,25 @@
+logging:
+  file: ./sb01.log
+  level:
+    root: info
+    cn: debug
+    org.mybatis: debug
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.241:3306/hce_guiyang?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+    username: root
+    password: Cec@123456
+  redis:
+    host: 192.168.1.233
+    port: 6379
+    pool:
+      max-active: -1
+      max-idle: 6
+    timeout: 60000
+    database: 1
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
