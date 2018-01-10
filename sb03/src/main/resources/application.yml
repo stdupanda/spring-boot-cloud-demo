@@ -1,0 +1,13 @@
+logging:
+  file: ./sb03.log
+  level:
+    root: info
+    cn: debug
+spring:
+  rabbitmq:
+    host: 172.16.100.156
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+server:
+  port: 8080

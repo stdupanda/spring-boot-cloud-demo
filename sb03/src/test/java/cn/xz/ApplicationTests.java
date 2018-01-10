@@ -1,6 +1,6 @@
 package cn.xz;
 
-import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -16,7 +16,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.context.WebApplicationContext;
+
+import cn.xz.ctrl.DemoController;
+import cn.xz.service.MQService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -24,21 +26,22 @@ public class ApplicationTests {
 
     private static final Logger log = LoggerFactory.getLogger(ApplicationTests.class);
 
-    @Autowired
-    private WebApplicationContext webApplicationContext;
-
     private MockMvc mvc;
+
+    @Autowired
+    private MQService mqService;
 
     @Before
     public void setUp() throws Exception {
-        mvc = MockMvcBuilders.webAppContextSetup(this.webApplicationContext).build();
+        mvc = MockMvcBuilders.standaloneSetup(new DemoController()).build();
     }
 
     @Test
     public void contextLoads() throws Exception {
         log.info("ok");
+        mqService.test();
         mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello World")));
+                .andExpect(content().string(containsString("Hello World")));
     }
 
 }
