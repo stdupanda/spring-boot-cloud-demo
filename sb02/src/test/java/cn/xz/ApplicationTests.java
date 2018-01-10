@@ -27,7 +27,7 @@ public class ApplicationTests {
     private static final Logger log = LoggerFactory.getLogger(ApplicationTests.class);
 
     private MockMvc mvc;
-    
+
     @Autowired
     private UserService userService;
 

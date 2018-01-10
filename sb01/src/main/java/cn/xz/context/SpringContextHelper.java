@@ -20,7 +20,7 @@ public class SpringContextHelper implements ApplicationContextAware {
         SpringContextHelper.applicationContext = applicationContext;
     }
 
-    public static <T> T getBean(Class<T> t){
+    public static <T> T getBean(Class<T> t) {
         return applicationContext.getBean(t);
     }
 }

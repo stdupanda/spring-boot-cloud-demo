@@ -34,12 +34,10 @@ public class Datasource01Config {
 
     @Primary
     @Bean(name = "datasource01SqlSessionFactory")
-    public SqlSessionFactory testSqlSessionFactory(@Qualifier("datasource01") DataSource dataSource)
-            throws Exception {
+    public SqlSessionFactory testSqlSessionFactory(@Qualifier("datasource01") DataSource dataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
-        bean.setMapperLocations(
-                new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xml"));
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xml"));
         return bean.getObject();
     }
 

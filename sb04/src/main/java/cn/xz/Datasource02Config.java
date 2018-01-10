@@ -18,7 +18,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 @MapperScan(basePackages = "cn.xz.dao2", sqlSessionTemplateRef = "datasource02SqlSessionTemplate")
 public class Datasource02Config {
 
-//    @Primary
+    // @Primary
     @Bean(name = "datasource02")
     @ConfigurationProperties(prefix = "spring.datasource.datasource02")
     public DataSource testDataSource() {
@@ -31,12 +31,10 @@ public class Datasource02Config {
     }
 
     @Bean(name = "datasource02SqlSessionFactory")
-    public SqlSessionFactory testSqlSessionFactory(@Qualifier("datasource02") DataSource dataSource)
-            throws Exception {
+    public SqlSessionFactory testSqlSessionFactory(@Qualifier("datasource02") DataSource dataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
-        bean.setMapperLocations(
-                new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xml"));
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xml"));
         return bean.getObject();
     }
 
