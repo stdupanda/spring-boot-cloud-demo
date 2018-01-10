@@ -1,0 +1,23 @@
+logging:
+  file: ./sb04.log
+  level:
+    root: info
+    cn: debug
+    org.mybatis: debug
+server:
+  port: 8084
+spring:
+  datasource:
+    datasource01:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.1.241:3306/hce_guiyang?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+      username: root
+      password: Cec@123456
+    datasource02:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.1.241:3306/hce_guiyang?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+      username: root
+      password: Cec@123456
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
