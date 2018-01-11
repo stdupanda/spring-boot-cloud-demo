@@ -60,7 +60,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>sb00</finalName>
+        <finalName>sb01</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
