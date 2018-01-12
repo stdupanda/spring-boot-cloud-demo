@@ -10,7 +10,8 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 
 |项目名|内容|简述|
 |:---|:---|:---|
-|sc00| Spring Cloud | 简单的 Eureka Server 实例 |
+|sc00| Spring Cloud | 单实例 Eureka Server 项目 |
+|sc01| Spring Cloud | 多实例 Eureka Server 集群 |
 
 ### Spring Boot 列表
 
