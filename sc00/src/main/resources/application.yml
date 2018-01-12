@@ -1,19 +1,16 @@
-# logging
 logging:
   file: ./sc00.log
   level:
     root: info
     cn: debug
-# server
 server:
   port: 8080
 spring:
   application:
     name: spring-cloud-eureka
-# erueka
 eureka:
   client:
     register-with-eureka: false
-    serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
     fetch-registry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:${server.port}/eureka/
