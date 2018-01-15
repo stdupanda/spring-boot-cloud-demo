@@ -1,0 +1,22 @@
+logging:
+  file: ./sc01_${random.value:0000}.log
+  level:
+    root: info
+    cn: debug
+server:
+  port: 8081
+spring:
+  application:
+    name: spring-cloud-eureka
+  profiles: server1
+eureka:
+  instance:
+    preferIpAddress: true
+    ip-address: 192.168.1.139
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://192.168.1.241:8082/eureka/
