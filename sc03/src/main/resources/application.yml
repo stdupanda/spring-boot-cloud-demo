@@ -4,15 +4,15 @@ logging:
     root: info
     cn: debug
 server:
-  port: 8082
+  port: 8083
 spring:
   application:
-    name: spring-cloud-eureka-producer
+    name: spring-cloud-eureka-consumer
 eureka:
   instance:
     hostname: localhost
     preferIpAddress: true
-    ip-address: 192.168.1.139
+    ip-address: ${spring.cloud.client.ipAddress}
     metadataMap:
       instanceId: ${spring.application.name}:${random.value}
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}
