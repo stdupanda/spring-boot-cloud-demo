@@ -1,0 +1,21 @@
+logging:
+  file: ./sc04_${random.int[1000,9999]}.log
+  level:
+    root: info
+    cn: debug
+server:
+  port: 8084
+spring:
+  application:
+    name: spring-cloud-eureka-consumer-hystrix
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+    ip-address: ${spring.cloud.client.ipAddress}
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.241:9001/eureka/
