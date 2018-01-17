@@ -14,6 +14,7 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sc01| Spring Cloud | 多实例 Eureka Server 集群 |
 |sc02| Spring Cloud | 简单的服务注册 |
 |sc03| Spring Cloud | 简单的服务调用 |
+|sc04| Spring Cloud | 集成 Hystrix 熔断器的服务调用 |
 
 ### Spring Boot 列表
 
