@@ -26,5 +26,5 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sb03| Spring Boot | RabbitMQ |
 |sb04| Spring Boot | Mybatis 多数据源 |
 |sb05| Spring Boot | JPA 多数据源 |
-
+|sb06| Spring Boot | 打 war 包，支持 servlet 3.0 及以上|
 
