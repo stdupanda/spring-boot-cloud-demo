@@ -1,0 +1,7 @@
+logging:
+  file: ./sb06.log
+  level:
+    root: info
+    cn: debug
+server:
+  port: 8086
