@@ -1,0 +1,19 @@
+logging:
+  file: ./sc05_${random.int[1000,9999]}.log
+  level:
+    root: info
+    cn: debug
+server:
+  port: 8085
+  context-path: /config
+spring:
+  profiles:
+    active: native
+  application:
+    name: spring-cloud-config
+  cloud:
+    config:
+      server:
+        native:
+          fail-on-error: true
+          search-locations: file:C:/111git_config/
