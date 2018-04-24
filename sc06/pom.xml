@@ -2,11 +2,11 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.xz</groupId>
-    <artifactId>sc05</artifactId>
+    <artifactId>sc06</artifactId>
     <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sc05</name>
-    <description>配置中心-文件</description>
+    <name>sc06</name>
+    <description>配置中心-git</description>
     <url>http://maven.apache.org</url>
 
     <parent>
@@ -51,7 +51,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>sc05</finalName>
+        <finalName>sc06</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

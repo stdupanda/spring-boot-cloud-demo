@@ -15,6 +15,8 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sc02| Spring Cloud | 简单的服务注册 |
 |sc03| Spring Cloud | 简单的服务调用 |
 |sc04| Spring Cloud | 集成 Hystrix 熔断器的服务调用 |
+|sc05| Spring Cloud | 简单的配置中心(配置文件) |
+|sc06| Spring Cloud | 简单的配置中心(git) |
 
 ### Spring Boot 列表
 
@@ -26,5 +28,6 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sb03| Spring Boot | RabbitMQ |
 |sb04| Spring Boot | Mybatis 多数据源 |
 |sb05| Spring Boot | JPA 多数据源 |
-|sb06| Spring Boot | 打 war 包，支持 servlet 3.0 及以上|
+|sb06| Spring Boot | 打 war 包，支持 servlet 3.0 及以上 |
+|sb07| Spring Boot | 使用配置中心 |
 
