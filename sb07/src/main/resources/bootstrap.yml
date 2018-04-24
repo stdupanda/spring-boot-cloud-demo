@@ -8,6 +8,9 @@ server:
 spring:
   cloud:
     config:
+      retry:
+        max-attempts: 600000
+        initial-interval: 500
       uri: http://localhost:8085/config
       name: db
       profile: dev
