@@ -1,0 +1,10 @@
+logging:
+  file: ./sb00_all.log
+  level:
+    root: info
+    cn: debug
+spring:
+  application:
+    name: sb08_logback
+server:
+  port: 8088
