@@ -1,12 +1,12 @@
 Spring Boot & Spring Cloud 全家桶使用记录.
 
-**博客链接**
+**博客教程链接**
 
 [SpringCloud](https://stdupanda.github.io/categories/#SpringCloud "https://stdupanda.github.io/categories/#SSpringCloud") :heart: :two_hearts: :heart:  [SpringBoot](https://stdupanda.github.io/categories/#SpringBoot "https://stdupanda.github.io/categories/#SpringBoot")
 
-**快速导航**
+**示例快速导航**
 
-### Spring Cloud 列表
+### Spring Cloud 教程项目示例列表
 
 |项目名|内容|简述|
 |:---|:---|:---|
@@ -18,7 +18,7 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sc05| Spring Cloud | 简单的配置中心(配置文件) |
 |sc06| Spring Cloud | 简单的配置中心(git) |
 
-### Spring Boot 列表
+### Spring Boot 教程项目示例列表
 
 |项目名|内容|简述|
 |:---|:---|:---|
