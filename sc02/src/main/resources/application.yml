@@ -11,6 +11,11 @@ spring:
   cloud:
     inetutils:
       ignored-interfaces: ethx
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    base-url: http://192.168.1.241:8087
 eureka:
   instance:
     hostname: ${spring.cloud.client.ipAddress}
