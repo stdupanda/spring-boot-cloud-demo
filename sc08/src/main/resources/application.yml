@@ -1,0 +1,29 @@
+logging:
+  file: ./sc08.log
+  level:
+    root: info
+    cn: debug
+server:
+  port: 8088
+spring:
+  application:
+    name: spring-cloud-zipkin-support-demo
+  cloud:
+    inetutils:
+      ignored-interfaces: ethx
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    base-url: http://192.168.1.241:8087
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ipAddress}
+    preferIpAddress: true
+    ip-address: ${spring.cloud.client.ipAddress}
+    metadataMap:
+      instanceId: ${spring.application.name}:${random.value}
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.241:9000/eureka/
