@@ -10,12 +10,13 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |:---|:---|:---|
 |sc00| Spring Cloud | 单实例 Eureka Server 项目 |
 |sc01| Spring Cloud | 多实例 Eureka Server 集群 |
-|sc02| Spring Cloud | 简单的服务*注册* |
+|sc02| Spring Cloud | 简单的服务*注册*(支持 zipkin 服务调用分析) |
 |sc03| Spring Cloud | 简单的服务**调用** |
 |sc04| Spring Cloud | 集成 Hystrix 熔断器的服务调用 |
 |sc05| Spring Cloud | 简单的配置中心(配置文件) |
 |sc06| Spring Cloud | 简单的配置中心(git) |
 |sc07| Spring Cloud | zipkin-server |
+|sc08| Spring Cloud | 服务注册&调用, 支持 zipkin 服务调用分析 |
 
 ### Spring Boot 项目示例
 
