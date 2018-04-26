@@ -12,6 +12,8 @@ spring:
   application:
     name: spring-cloud-config
   cloud:
+    inetutils:
+      ignored-interfaces: ethx
     config:
       server:
         native:

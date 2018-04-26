@@ -8,6 +8,9 @@ server:
 spring:
   application:
     name: spring-cloud-eureka
+  cloud:
+    inetutils:
+      ignored-interfaces: ethx
   profiles: server1
 eureka:
   instance:

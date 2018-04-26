@@ -8,6 +8,9 @@ server:
 spring:
   application:
     name: spring-cloud-eureka-consumer-hystrix
+  cloud:
+    inetutils:
+      ignored-interfaces: ethx
 eureka:
   instance:
     hostname: localhost
