@@ -15,6 +15,7 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sc04| Spring Cloud | 集成 Hystrix 熔断器的服务调用 |
 |sc05| Spring Cloud | 简单的配置中心(配置文件) |
 |sc06| Spring Cloud | 简单的配置中心(git) |
+|sc07| Spring Cloud | zipkin-server |
 
 ### Spring Boot 项目示例
 
