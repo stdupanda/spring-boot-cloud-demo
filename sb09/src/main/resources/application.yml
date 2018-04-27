@@ -1,0 +1,13 @@
+logging:
+  file: ./sb09_all.log
+  level:
+    root: info
+    cn: debug
+spring:
+  application:
+    name: sb09_logback
+  kafka:
+    client-id: ${spring.application.name}_${server.port}
+    bootstrap-servers: 192.168.1.236:9092
+server:
+  port: 8089
