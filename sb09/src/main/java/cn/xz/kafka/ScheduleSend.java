@@ -11,8 +11,9 @@ public class ScheduleSend {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    @Scheduled(cron="0/5 * * * * ?")
+    @Scheduled(cron = "0/5 * * * * ?")
     public void send() {
-        kafkaTemplate.send("test_topic", "" + System.nanoTime());
+        kafkaTemplate.send("test_topic", "" + System.nanoTime()).addCallback(o -> System.out.println("send-消息发送成功"),
+                throwable -> System.out.println("消息发送失败"));
     }
 }
