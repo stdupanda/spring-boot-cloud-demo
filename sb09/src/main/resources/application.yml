@@ -7,9 +7,11 @@ spring:
   application:
     name: sb09_logback
   kafka:
-    client-id: ${spring.application.name}_${server.port}
+    client-id: 1_${spring.application.name}_${server.port}
     bootstrap-servers: 192.168.1.236:9092
-    producer:
+    consumer:
       bootstrap-servers: 192.168.1.236:9092
+      client-id: 1_${spring.application.name}_${server.port}
+      group-id: test_group
 server:
   port: 8089
