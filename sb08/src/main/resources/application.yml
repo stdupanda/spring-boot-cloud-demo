@@ -1,5 +1,4 @@
 logging:
-  file: ./sb08_all.log
   level:
     root: info
     cn: debug
