@@ -14,12 +14,16 @@ spring:
     sampler:
       percentage: 1.0
   zipkin:
-    base-url: http://192.168.1.241:8087
+#    base-url: http://192.168.1.241:8087
     sender:
-      type: rabbit
-#  kafka:
-#    bootstrap-servers: 192.168.1.236:9092
-#    client-id: ${spring.application.name}_${server.port}
+      type: kafka
+    rabbitmq:
+      queue: zipkin_queue
+    kafka:
+      topic: zipkin_topic
+  kafka:
+    bootstrap-servers: 192.168.1.236:9092
+    client-id: ${spring.application.name}_${server.port}
   rabbitmq:
     host: 172.16.100.156
     port: 5672
