@@ -1,0 +1,10 @@
+logging:
+  file: ./log_sb10.log
+  level:
+    root: info
+    cn: debug
+spring:
+  application:
+    name: sb10_SBA
+server:
+  port: 8010
