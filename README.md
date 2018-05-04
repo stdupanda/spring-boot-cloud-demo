@@ -31,4 +31,6 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sb06| Spring Boot | 打 war 包，支持 servlet 3.0 及以上 |
 |sb07| Spring Boot | 使用配置中心 |
 |sb08| Spring Boot | 自定义 logback 扩展，按天滚动日志文件 |
+|sb09| Spring Boot | kafka 集成 |
+|sb10| Spring Boot | Spring Boot Admin server 实例 |
 
