@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import cn.xz.MyProperties;
+import cn.xz.MyPropertiesBean;
 
 @RestController
 @Transactional(timeout = 10)
@@ -28,11 +29,14 @@ public class DemoController {
 
     @Autowired
     private MyProperties myProperties;
+    @Autowired
+    private MyPropertiesBean bean;
 
     @RequestMapping("/hello")
     public String index() {
         log.debug("{}", System.nanoTime() + getString());
         log.debug("{} - {} 1s", myProperties.getConfig1(), myProperties.getConfig2());
+        log.debug("{} - {} 1s", bean.getConfig1(), bean.getConfig2());
         return "Hello World";
     }
 }
