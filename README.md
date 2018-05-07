@@ -17,12 +17,14 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sc06| Spring Cloud | 简单的配置中心(git) |
 |sc07| Spring Cloud | zipkin-server |
 |sc08| Spring Cloud | 服务注册&调用, 支持 zipkin 服务调用分析 |
+|sc09| Spring Cloud | Spring Boot Admin server 实例(注册到Eureka) |
+|sc10| Spring Cloud | Spring Boot Admin client 实例(注册到Eureka) |
 
 ### Spring Boot 项目示例
 
 |项目名|内容|简述|
 |:---|:---|:---|
-|sb00| Spring Boot | 最简单的项目|
+|sb00| Spring Boot | 最简单的项目(已配置 lombok) |
 |sb01| Spring Boot | 自定义数据源 HikariCP, 配置文件, mybatis, redis, schedule 等 |
 |sb02| Spring Boot | JPA |
 |sb03| Spring Boot | RabbitMQ |
@@ -32,5 +34,5 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sb07| Spring Boot | 使用配置中心 |
 |sb08| Spring Boot | 自定义 logback 扩展，按天滚动日志文件 |
 |sb09| Spring Boot | kafka 集成 |
-|sb10| Spring Boot | Spring Boot Admin server 实例 |
+|sb10| Spring Boot | Spring Boot Admin server 实例(未注册到Eureka) |
 
