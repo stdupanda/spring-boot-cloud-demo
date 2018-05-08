@@ -35,4 +35,5 @@ Spring Boot & Spring Cloud 全家桶使用记录.
 |sb08| Spring Boot | 自定义 logback 扩展，按天滚动日志文件 |
 |sb09| Spring Boot | kafka 集成 |
 |sb10| Spring Boot | Spring Boot Admin server 实例(未注册到Eureka) |
+|sb11| Spring Boot | Spring Boot 自定义 web 错误界面 |
 
