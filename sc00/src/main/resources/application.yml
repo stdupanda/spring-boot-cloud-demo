@@ -16,7 +16,7 @@ eureka:
     enabled: true
     path: /
   instance:
-    hostname: localhost
+    hostname: ${spring.cloud.client.ipAddress}
     prefer-ip-address: true
   client:
     register-with-eureka: false
