@@ -5,3 +5,8 @@ logging:
     cn: debug
 server:
   port: 8080
+line_no_prefix:
+  0
+line_no_config:
+  - { old_val: Steve, new_val: bar }
+  - { old_val: Steve, new_val: bar }
