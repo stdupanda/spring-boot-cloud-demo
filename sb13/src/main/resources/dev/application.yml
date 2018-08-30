@@ -1,0 +1,7 @@
+logging:
+  file: ./log_sb13.log
+  level:
+    root: info
+    cn: debug
+server:
+  port: 8013
